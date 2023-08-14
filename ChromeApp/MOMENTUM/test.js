@@ -21,7 +21,7 @@ console.log(2 % 5); // 연산 값 console에 출력 (% = 나머지)
 const a = 5;
 const b = "2";
 
-const myName = "hosung"; //JS camelCase(낙타 등처럼 보임) 표기법
+let myName = "hosung"; //JS camelCase(낙타 등처럼 보임) 표기법
 const veryLongVariableName = 0; //JS camelCase(낙타 등처럼 보임) 표기법
 
 console.log(a - b); // Variables를 활용한 연산 값 console에 출력 (- = 더하기)
@@ -32,3 +32,7 @@ console.log(a % b); // Variables를 활용한 연산 값 console에 출력 (% = 
 
 console.log("Hello, " + "hosung") // 문자열 출력
 console.log("Hello, " + myName) // Variable을 활용한 문자열 출력
+
+myName = "rahosung"; // 새로운 값 할당
+
+console.log("Your new name is " + myName); // 새롭게 할당된 값 출력
