@@ -55,3 +55,22 @@ console.log(daysOfWeek[4]); // 배열에서 속성 값 출력
 daysOfWeek.push("Sun"); //배열에 값 추가
 
 console.log(daysOfWeek); // 추가한 값 포함 요일 출력
+
+// Objects
+// Object: 객체에 대한 속성(ex. 객체의 이름, 나이 등), List: 하나의 주제에 대한 속성(ex. 요일)
+const player = {
+    name: "hosung",
+    points: 10,
+    fat: true,
+}; // player 객체 생성
+
+console.log(player); // 객체 출력
+console.log(player.name); // 객체.속성 값 출력
+console.log(player["name"]); // 객체["속성"] 값 출력
+
+// 객체 자체의 타입을 변경시키는 건 오류(ex. player = false;), Constant 안의 속성값을 업데이트 하는 것은 오류 X
+player.fat = false; // 객체에 새로운 값 할당
+player.lastName = "rahosung"; // 객체에 새로운 속성 추가
+player.points = player.points + 15; // 객체에 연산으로 새로운 값 할당 가능
+
+console.log(player); // 새로운 값 출력
