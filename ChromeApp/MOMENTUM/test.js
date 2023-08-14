@@ -74,3 +74,12 @@ player.lastName = "rahosung"; // 객체에 새로운 속성 추가
 player.points = player.points + 15; // 객체에 연산으로 새로운 값 할당 가능
 
 console.log(player); // 새로운 값 출력
+
+// Functions part One
+// 함수 선언식
+function sayHello() { //argument(인수): 어떠한 정보를 Function에게 보내는 것
+    console.log("Hello mt name is ");
+}
+
+sayHello(); // 함수 실행
+sayHello("hosung"); // 함수에 데이터를 보내고 실행
