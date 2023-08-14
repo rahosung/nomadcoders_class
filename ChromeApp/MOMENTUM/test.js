@@ -45,3 +45,13 @@ const amIFat = false; // false 값 할당
 let something; // Undefined 정의되지 않음
 
 console.log(something, amIFat); // undefined, false 출력
+
+// Arrays
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]; // 요일 배열 생성 (string => array), 배열은 0 ~ n(배열의 속성 - 1) 의 인덱스 값을 가짐 
+
+console.log(daysOfWeek); // 요일 출력
+console.log(daysOfWeek[4]); // 배열에서 속성 값 출력
+
+daysOfWeek.push("Sun"); //배열에 값 추가
+
+console.log(daysOfWeek); // 추가한 값 포함 요일 출력
