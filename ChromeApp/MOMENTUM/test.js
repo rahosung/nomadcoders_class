@@ -58,28 +58,52 @@ console.log(daysOfWeek); // 추가한 값 포함 요일 출력
 
 // Objects
 // Object: 객체에 대한 속성(ex. 객체의 이름, 나이 등), List: 하나의 주제에 대한 속성(ex. 요일)
-const player = {
+const player1 = {
     name: "hosung",
     points: 10,
     fat: true,
 }; // player 객체 생성
 
-console.log(player); // 객체 출력
-console.log(player.name); // 객체.속성 값 출력
-console.log(player["name"]); // 객체["속성"] 값 출력
+console.log(player1); // 객체 출력
+console.log(player1.name); // 객체.속성 값 출력
+console.log(player1["name"]); // 객체["속성"] 값 출력
 
 // 객체 자체의 타입을 변경시키는 건 오류(ex. player = false;), Constant 안의 속성값을 업데이트 하는 것은 오류 X
-player.fat = false; // 객체에 새로운 값 할당
-player.lastName = "rahosung"; // 객체에 새로운 속성 추가
-player.points = player.points + 15; // 객체에 연산으로 새로운 값 할당 가능
+player1.fat = false; // 객체에 새로운 값 할당
+player1.lastName = "rahosung"; // 객체에 새로운 속성 추가
+player1.points = player1.points + 15; // 객체에 연산으로 새로운 값 할당 가능
 
-console.log(player); // 새로운 값 출력
+console.log(player1); // 새로운 값 출력
 
 // Functions part One
 // 함수 선언식
-function sayHello() { //argument(인수): 어떠한 정보를 Function에게 보내는 것
-    console.log("Hello mt name is ");
+function sayHello(nameOfPerson, age) { //argument(인수): 어떠한 정보를 Function에게 보내는 것
+    console.log("Hello mt name is " + nameOfPerson + "and I'm " + age);
 }
 
 sayHello(); // 함수 실행
-sayHello("hosung"); // 함수에 데이터를 보내고 실행
+sayHello("hosung", 19); // 함수에 데이터를 보내고 실행
+
+// Functions part Two
+function plus(firstNumber, secondNember) { // argument의 이름은 사용자가 설정
+    console.log(firstNumber + secondNember);
+}
+
+function divide(firstNumber, secondNember) { // argument는 함수 안에서만 존재
+    console.log(firstNumber / secondNember);
+}
+
+// plus(); NaN: Not a Number(숫자가 아님)
+plus(8, 60); // 순서대로 인자값 전달 firstNumber = 8, secondNember = 60
+divide(98, 20); // 순서대로 인자값 전달 firstNumber = 98, secondNember = 20
+
+// Object 속 Function
+const player2 = {
+    name: "hosung",
+    sayHello: function (otherPersonName) { // 함수 선언식
+        console.log("hello " + otherPersonName + " nice to meet you!");
+    },
+};
+
+console.log(player2.name); // Object 속성 출력
+player2.sayHello("hosung"); // Object 함수 출력
