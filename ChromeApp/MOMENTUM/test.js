@@ -30,5 +30,5 @@ console.log(a + b); // Variables를 활용한 연산 값 console에 출력 (+ = 
 console.log(a / b); // Variables를 활용한 연산 값 console에 출력 (/ = 나누기)
 console.log(a % b); // Variables를 활용한 연산 값 console에 출력 (% = 나머지)
 
-console.log("Hello, " + "hosung") //문자열 출력
-console.log("Hello, " + myName) //Variable을 활용한 문자열 출력
+console.log("Hello, " + "hosung") // 문자열 출력
+console.log("Hello, " + myName) // Variable을 활용한 문자열 출력
