@@ -114,35 +114,27 @@ console.log(player2.name);
 // Object 함수 실행
 player2.sayHello("hosung");
 
-// Calculator
-// 간단한 계산기 객체 만들기
+// Returns
+// return 사용 시 값 반환
 const calculator = {
     plus: function (a, b) {
-        console.log(a + b);
+        return a + b;
     },
     minus: function (a, b) {
-        console.log(a - b);
+        return a - b;
     },
     times: function (a, b) {
-        console.log(a * b);
+        return a * b;
     },
     divide: function (a, b) {
-        console.log(a / b);
+        return a / b;
     },
     power: function (a, b) {
-        console.log(a ** b);
+        return a ** b;
     },
 };
 
-// calculator 객체 함수 실행
-calculator.plus(2, 3);
+// 함수 실행 및 반환 값 출력
+const plusResult = calculator.plus(2, 3);
 
-// Returns
-const age = 96;
-function calculateKrAge(ageOfForeigner) {
-    return ageOfForeigner + 2;
-}
-
-const KrAge = calculateKrAge(age);
-
-console.log(KrAge);
+console.log(plusResult);
