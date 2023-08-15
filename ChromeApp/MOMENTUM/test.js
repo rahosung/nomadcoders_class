@@ -138,3 +138,8 @@ const calculator = {
 const plusResult = calculator.plus(2, 3);
 
 console.log(plusResult);
+
+// Conditionals
+const age = parseInt(prompt("How old are you?"));
+
+console.log(age);
