@@ -107,3 +107,31 @@ const player2 = {
 
 console.log(player2.name); // Object 속성 출력
 player2.sayHello("hosung"); // Object 함수 출력
+
+// Calculator
+const calculator = { // 간단한 계산기 객체 만들기
+    plus: function (a, b) { // Plus(더하기)
+        console.log(a + b);
+    },
+    minus: function (a, b) { // Minus(빼기)
+        console.log(a - b);
+    },
+    times: function (a, b) { // Times(곱하기)
+        console.log(a * b);
+    },
+    divide: function (a, b) { // Divide(나누기)
+        console.log(a / b);
+    },
+    power: function (a, b) { // Power(제곱)
+        console.log(a ** b);
+    },
+};
+
+calculator.plus(2, 3); // calculator 객체 plus 함수 실행
+calculator.minus(2, 3); // calculator 객체 minus 함수 실행
+calculator.times(2, 3); // calculator 객체 times 함수 실행
+calculator.divide(2, 3); // calculator 객체 divide 함수 실행
+calculator.power(2, 3); // calculator 객체 power 함수 실행
+
+// Returns
+ 
