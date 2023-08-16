@@ -141,13 +141,18 @@ console.log(plusResult);
 
 // Conditionals Part One
 // Conditional = 조건식
-const age = parseInt(prompt("How old are you?"));
+const age = parseInt(prompt("How old are you?")); //prompt = 입력
 
-// Conditionals Part Two
-if (isNaN(age)) { // isNaN: NaN인지 아닌지 true, false 값 반환
-    console.log("Please write a number"); // condition === true
-} else {
-    console.log("Thank you for writing your age."); // condition === false
+// Conditionals Part Two, Three
+// And(&&) Operator(연산자): 모두 참 === true, Or(||) Operator: 둘 중 하나만 true면 === true
+if (isNaN(age) || age < 0) { // isNaN: NaN인지 아닌지 true, false 값 반환
+    console.log("Please write a real positive number");
+} else if (age < 18) {
+    console.log("You are too young");
+} else if (age >= 18 && age <= 50) {
+    console.log("You can drink");
+} else if (age > 50 && age <= 80) {
+    console.log("You should exercise");
+} else if (age > 80) {
+    console.log("You can do whatever you want.");
 }
-
-// Conditionals Part Three
