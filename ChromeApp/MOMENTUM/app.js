@@ -1,7 +1,4 @@
-// The Document Object
-document.title = "Hello! From JS!";
+// Searching For Elements
+const title = document.querySelector(".class h1");
 
-// HTML in Javascript
-const title = document.getElementById("title");
-
-title.innerText = "Got you!";
+console.log(title);
