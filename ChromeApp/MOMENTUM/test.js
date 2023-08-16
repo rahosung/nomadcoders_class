@@ -139,7 +139,15 @@ const plusResult = calculator.plus(2, 3);
 
 console.log(plusResult);
 
-// Conditionals
+// Conditionals Part One
+// Conditional = 조건식
 const age = parseInt(prompt("How old are you?"));
 
-console.log(age);
+// Conditionals Part Two
+if (isNaN(age)) { // isNaN: NaN인지 아닌지 true, false 값 반환
+    console.log("Please write a number"); // condition === true
+} else {
+    console.log("Thank you for writing your age."); // condition === false
+}
+
+// Conditionals Part Three
