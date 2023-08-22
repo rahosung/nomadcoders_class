@@ -1,8 +1,10 @@
-// CSS in Javascript Part Three
-const h1 = document.querySelector("div.hello:first-child h1");
+// Input Values
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-function handleTitleClick() {
-    h1.classList.toggle("clicked");
+function onLoginBtnClick() {
+    console.log(loginInput.value);
+    console.log("Click");
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", onLoginBtnClick);
