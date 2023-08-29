@@ -11,6 +11,8 @@ function onLoginSubmit(event) {
 
     loginForm.classList.add(HIDDEN_CLASSNAME);
 
+    localStorage.setItem("username", userName);
+
     greeting.innerText = `Hello ${userName}`;
     greeting.classList.remove(HIDDEN_CLASSNAME)
 
