@@ -40,7 +40,7 @@ const quotes = [
         quote: "粉骨碎身 : 분골쇄신",
         meaning: "뼈가 가루가 되고 몸이 부서진다는 뜻으로, 있는 힘을 다해 노력(努力)함",
     },
-]
+];
 
 const quote = document.querySelector("#quote span:first-child");
 const meaning = document.querySelector("#quote span:last-child");
