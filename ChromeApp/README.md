@@ -12,5 +12,8 @@
 5. padStart(): 문자열의 길이 설정 및 부족한 길이를 설정한 데이터로 맞춰주는 함수
 ---
 ## QUOTES AND BACKGROUND
-1. 
+1. Math(): 수학을 사용하는 함수 (ex. floor: 내림, ceil: 올림, round: 반올림)
+2. createElement(): JS 내에서 Element를 생성해내는 함수
+3. appendChild(): HTML의 body 태그 안에 Element를 추가하는 함수
+
 ---
