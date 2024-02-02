@@ -22,8 +22,8 @@ function App() {
       <h1 className={styles}>hello</h1>
       <Button text={"button"}/>
       
-      <hr style={{border : "solid 1px"}}/>
-      
+      <hr />
+
       <h1>To Do List part One</h1>
       <h2>My To Dos ({toDos.length})</h2>
       <form onSubmit={onSubmit}>
@@ -37,6 +37,11 @@ function App() {
       </form>
 
       <hr />
+      <ul>
+        {toDos.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
