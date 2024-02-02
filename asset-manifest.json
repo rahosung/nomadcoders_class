@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.2abfd71f.js",
-    "index.html": "/index.html",
-    "main.2abfd71f.js.map": "/static/js/main.2abfd71f.js.map"
+    "main.js": "/nomadcoders_class/static/js/main.e58e227b.js",
+    "index.html": "/nomadcoders_class/index.html",
+    "main.e58e227b.js.map": "/nomadcoders_class/static/js/main.e58e227b.js.map"
   },
   "entrypoints": [
-    "static/js/main.2abfd71f.js"
+    "static/js/main.e58e227b.js"
   ]
 }
