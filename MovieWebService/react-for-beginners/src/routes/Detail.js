@@ -21,25 +21,30 @@ function Detail() {
     getMovie();
   }, []);
   return (
-    <div>
-      <div>
-        <Link to={`${process.env.PUBLIC_URL}/`} style={{ "text-decoration": "none", "color": "#2c2c2c"}}>
-          <h1>Detail</h1>
-        </Link>
-      </div>
-      <br />
+    <div className={styles.container}>
       {loading ? (
         <div className={styles.loader}>
           <span>Loading...</span>
         </div>
       ) : (
-        <Movie
-          id={movie.data.movie.id}
-          coverImage={movie.data.movie.medium_cover_image}
-          title={movie.data.movie.title}
-          summary={movie.data.movie.description_full}
-          genres={movie.data.movie.genres}
-        />
+        <div>
+          <div>
+            <Link
+              to={`${process.env.PUBLIC_URL}/`}
+              style={{ "text-decoration": "none", color: "#2c2c2c" }}
+            >
+              <h1>Detail</h1>
+            </Link>
+          </div>
+          <br />
+          <Movie
+            id={movie.data.movie.id}
+            coverImage={movie.data.movie.medium_cover_image}
+            title={movie.data.movie.title}
+            summary={movie.data.movie.description_full}
+            genres={movie.data.movie.genres}
+          />
+        </div>
       )}
     </div>
   );
