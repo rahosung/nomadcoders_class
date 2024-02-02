@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Movie from "../components/Movie";
 import styles from "./Home.module.css";
 
@@ -22,11 +22,15 @@ function Detail() {
   }, []);
   return (
     <div>
-      <h1>Detail</h1>
+      <div>
+        <Link to={`${process.env.PUBLIC_URL}/`} style={{ "text-decoration": "none", "color": "#2c2c2c"}}>
+          <h1>Detail</h1>
+        </Link>
+      </div>
       <br />
       {loading ? (
         <div className={styles.loader}>
-        <span>Loading...</span>
+          <span>Loading...</span>
         </div>
       ) : (
         <Movie
